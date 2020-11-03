@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primera app</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+    <script type="text/babel">
+        const raiz = document.getElementById('root');
+
+        const nombre = "Federica";
+        const img = <img src="./foto.jpg" alt="atardecer" style={{width: 500, height: 500, textAlign: "center"}}/>
+
+        const main = (
+            <div className="main">
+                <h1 className="center">Primera aplicación React</h1>
+                <h2 className="center">Bienvenida {nombre}</h2>
+                {img}
+            </div>
+        );
+
+        const header = <div className="header"/>;
+        const footer = <div className="footer"/>;
+
+        const app = (
+            <div>
+                {header}
+                {main}
+                {footer}
+            </div>
+        )
+
+        ReactDOM.render(app, raiz);
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
