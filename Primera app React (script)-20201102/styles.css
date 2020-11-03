@@ -13,7 +13,8 @@ body {
 }
 
 .footer  {
-    background-color: red;
+    //background-color: red;
+    background-image: ;
     width: 100%;
     height: 50px;
     position: absolute;
